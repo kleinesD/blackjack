@@ -248,7 +248,7 @@ $(document).ready(function () {
     if(!$('#cards1').hasClass('cards-too-much') || !$('#cards2').hasClass('cards-too-much')) {
       let newDealerCard = serveCard(currentDeck);
       dealerCards.push(newDealerCard);
-      $('#dealer').find('.cards-block').append(`<img src="/card-images/${newDealerCard}.svg">`)
+      $('#dealer').find('.cards-block').append(`<img src="https://kleinesd.github.io/blackjack/card-images/${newDealerCard}.svg">`)
     }
 
     window.setTimeout(() => {
@@ -294,9 +294,9 @@ $(document).ready(function () {
     player.cards1.push(serveCard(currentDeck));
 
 
-    $('#player').find('.cards-block').append(`<img src="/card-images/${player.cards1[0]}.svg">`)
-    $('#player').find('.cards-block').append(`<img src="/card-images/${player.cards1[1]}.svg">`)
-    $('#dealer').find('.cards-block').append(`<img src="/card-images/${dealer.cards[0]}.svg">`)
+    $('#player').find('.cards-block').append(`<img src="https://kleinesd.github.io/blackjack/card-images/${player.cards1[0]}.svg">`)
+    $('#player').find('.cards-block').append(`<img src="https://kleinesd.github.io/blackjack/card-images/${player.cards1[1]}.svg">`)
+    $('#dealer').find('.cards-block').append(`<img src="https://kleinesd.github.io/blackjack/card-images/${dealer.cards[0]}.svg">`)
 
     countingCards(player.cards1, 'player');
 
@@ -309,7 +309,7 @@ $(document).ready(function () {
     $('#hit').click(function () {
       $('.split-hide').hide()
       player.cards1.push(serveCard(currentDeck));
-      $('#player').find('.cards-block').append(`<img src="/card-images/${player.cards1[player.cards1.length - 1]}.svg">`);
+      $('#player').find('.cards-block').append(`<img src="https://kleinesd.github.io/blackjack/card-images/${player.cards1[player.cards1.length - 1]}.svg">`);
 
       countingCards(player.cards1, 'player');
     });
@@ -362,7 +362,7 @@ $(document).ready(function () {
       $('#hit').click(function () {
         if ($('.current-cards-block').attr('id') === 'cards1') {
           player.cards1.push(serveCard(currentDeck));
-          $('#cards1').append(`<img src="/card-images/${player.cards1[player.cards1.length - 1]}.svg">`);
+          $('#cards1').append(`<img src="https://kleinesd.github.io/blackjack/card-images/${player.cards1[player.cards1.length - 1]}.svg">`);
 
           let total = countingCardsForSplit(player.cards1, '#cards1');
 
@@ -372,7 +372,7 @@ $(document).ready(function () {
 
         } else if ($('.current-cards-block').attr('id') === 'cards2') {
           player.cards2.push(serveCard(currentDeck));
-          $('#cards2').append(`<img src="/card-images/${player.cards2[player.cards2.length - 1]}.svg">`);
+          $('#cards2').append(`<img src="https://kleinesd.github.io/blackjack/card-images/${player.cards2[player.cards2.length - 1]}.svg">`);
 
           let total = countingCardsForSplit(player.cards2, '#cards2');
 
