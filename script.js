@@ -138,7 +138,7 @@ $(document).ready(function () {
   const dealerCardsCount = (currentDeck, dealerCards, playerCards) => {
     let newDealerCard = serveCard(currentDeck);
     dealerCards.push(newDealerCard);
-    $('#dealer').find('.cards-block').append(`<img src="/card-images/${newDealerCard}.svg">`)
+    $('#dealer').find('.cards-block').append(`<img src="https://kleinesd.github.io/blackjack/card-images/${newDealerCard}.svg">`)
 
     window.setTimeout(() => {
       let totalDealer = countingCards(dealerCards, 'dealer');
@@ -338,13 +338,13 @@ $(document).ready(function () {
       /* <div class="end-game-split">DEALER WIN</div> */
       $('#player').find('.all-cards-block').append(`<div class="cards-block current-cards-block" id="cards1">
       <div class="bet">${player.bet / 2}$</div>
-      <img src="/card-images/${player.cards1[0]}.svg">
-      <img src="/card-images/${player.cards1[1]}.svg">
+      <img src="https://kleinesd.github.io/blackjack/card-images/${player.cards1[0]}.svg">
+      <img src="https://kleinesd.github.io/blackjack/card-images/${player.cards1[1]}.svg">
       </div>`);
       $('#player').find('.all-cards-block').append(`<div class="cards-block" id="cards2">
       <div class="bet">${player.bet / 2}$</div>
-      <img src="/card-images/${player.cards2[0]}.svg">
-      <img src="/card-images/${player.cards2[1]}.svg">
+      <img src="https://kleinesd.github.io/blackjack/card-images/${player.cards2[0]}.svg">
+      <img src="https://kleinesd.github.io/blackjack/card-images/${player.cards2[1]}.svg">
       </div>`);
       $('.bet').css('opacity', '1');
       $('.money').text(`${player.money}$`)
