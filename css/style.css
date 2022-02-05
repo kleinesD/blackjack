@@ -1,0 +1,128 @@
+*{
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  color: #fff;
+  font-family: 'Outfit', monospace;
+  transition: all 0.2s;
+}
+body{
+  background-color: #2B262B;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.action-end {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2b262be5;
+  z-index: 100;
+  font-size: 500%;
+  display: none;
+}
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.title-player {
+  font-size: 200%;
+}
+.all-cards-block {
+  display: flex;
+  align-items: center;
+}
+.cards-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px 50px;
+  transform: scale(1);
+}
+.current-cards-block {
+  transform: scale(1.2);
+}
+.end-game-split {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #2b262be5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 150%;
+}
+.cards-block img {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+}
+.money {
+  font-size: 150%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.bet {
+  font-size: 125%;
+  position: absolute;
+  top: -25px;
+  opacity: 0;
+}
+.btns-block {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 10px;
+  align-items: flex-end;
+}
+.text-btns {
+  height: 50px;
+  padding: 0 10px;
+  font-size: 150%;
+  margin: 20px 0;
+  background-color: #F5CB5C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2B262B;
+  cursor: pointer;
+}
+.bet-btns {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2B262B;
+  background-color: #F5CB5C;
+  font-size: 200%;
+  cursor: pointer;
+}
+.vote-btns {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2B262B;
+  background-color: #F5CB5C;
+  font-size: 150%;
+  cursor: pointer;
+  margin: 5px 0;
+  display: none;
+}
+.bet-hide:hover,
+.vote-btns:hover {
+  background-color: #d3b258;
+}

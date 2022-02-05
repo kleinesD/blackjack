@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/queries.css">
+  <title> BlackJack by Denny Kleines</title>
+</head>
+
+<body>
+  <div class="action-end">TOO MUCH</div>
+  <div class="money" id="player-money">1000$</div>
+  <div class="btns-block">
+    <div class="bet-btns bet-hide" id="plus-bet">+</div>
+    <div class="text-btns bet-hide" id="bet-amount" data-amount="10">BET: 10$</div>
+    <div class="bet-btns bet-hide" id="minus-bet">-</div>
+
+    <div class="vote-btns vote-hide" id="hit">HIT</div>
+    <div class="vote-btns vote-hide" id="stay">STAY</div>
+
+    <div class="vote-btns split-hide" id="split">SPLIT</div>
+  </div>
+  <div class="player" id="dealer">
+    <div class="title-player">DEALER</div>
+    <div class="cards-block">
+    </div>
+  </div>
+  <div class="player" id="player">
+    <div class="all-cards-block">
+      <div class="cards-block">
+        <div class="bet"> 10$</div>
+      </div>
+      
+    </div>
+
+    <div class="title-player">PLAYER</div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
